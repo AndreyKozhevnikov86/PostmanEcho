@@ -11,7 +11,7 @@ public class PostmanEchoTest {
         var text = "Hi";
         given()
                 .baseUri("https://postman-echo.com")
-                .body(text) // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("By") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
